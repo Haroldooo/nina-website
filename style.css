@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero section */
+#hero{
+    background-image: url(./img/startseite_inbox_neu.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .68;
+    z-index: -1;
+}
+
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color: white;
+}
+
+#hero h1 div{ 
+    color: rgb(60, 120, 50);;
+}
+
+#hero p{
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+    font-size: 1.8rem;
+    position: relative;
+    color: white;
+    max-width: 550px;
+    justify-content: flex-start;
+}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid rgb(60, 120, 50);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 36px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+#hero .cta:hover{
+    color: white;
+    background-color: rgb(60, 120, 50);
+}
+
+/* End Hero section */
+
+/* Service section */
+#services{}
+#services .service{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#services .section-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+#services .service-bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+#services .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px black;
+    border-radius: 10px;    
+}
+/* End of Service section */
